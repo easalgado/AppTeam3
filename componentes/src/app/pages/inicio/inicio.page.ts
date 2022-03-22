@@ -31,7 +31,17 @@ export class InicioPage implements OnInit {
       icon:'git-network-outline',
       name:'tabla-trabajo',
       redirectTo: '/tabla-trabajo'
+    },
+    {
+      icon:'albums',
+      name:'slides',
+      redirectTo: '/slides'
     }
+
+
+
+
+
   ];
 
 

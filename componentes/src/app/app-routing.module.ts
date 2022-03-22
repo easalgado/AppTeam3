@@ -24,6 +24,10 @@ const routes: Routes = [
     path: 'tabla-trabajo',
     loadChildren: () => import('./pages/tabla-trabajo/tabla-trabajo.module').then( m => m.TablaTrabajoPageModule)
   },
+  {
+    path: 'slides',
+    loadChildren: () => import('./pages/slides/slides.module').then( m => m.SlidesPageModule)
+  },
 ];
 
 @NgModule({
