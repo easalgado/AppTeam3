@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { TablaTrabajoPageRoutingModule } from './tabla-trabajo-routing.module';
 
 import { TablaTrabajoPage } from './tabla-trabajo.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TablaTrabajoPageRoutingModule
+    TablaTrabajoPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [TablaTrabajoPage]
 })
