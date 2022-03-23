@@ -15,6 +15,21 @@ interface componente {
   styleUrls: ['./inicio.page.scss'],
 })
 export class InicioPage implements OnInit {
+  slides = [
+    {
+     img: 'assets/img/M1.jpg',
+     titulo: 'MATRICULATE YA <br>in UMH'
+    },
+    {
+     img: 'assets/img/UMH1.JPG',
+     titulo: 'SOMOS<br>UMH'
+    },
+    {
+     img: 'assets/img/M1.jpg',
+     titulo: 'UMH<br>TU INIVERSIDAD <BR> DE EXITO'
+    },
+   ]
+
 
   componentes: componente[] = [
     {
