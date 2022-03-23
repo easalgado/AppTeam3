@@ -1,51 +1,17 @@
 <ion-content>
 
-      
-
   <ion-slides pager="true">
-    <ion-slide class="slide-1">
-      <h1>Slide 1</h1>
-      <ion-buttons slot="start">
-
-        <ion-back-button defaultHref="/" text="Volver" color="warning" mode="ios">
+ 
+     <ion-slide *ngFor="let slide of slides">
   
-        </ion-back-button>
-  
-  
-      </ion-buttons>
-  
-    </ion-slide>
-
-
-    <ion-slide class="slide-2">
-      <h1>Slide 2</h1>
-      <ion-buttons slot="start">
-
-        <ion-back-button defaultHref="/" text="Volver" color="secondary" mode="ios">
-  
-        </ion-back-button>
-  
-  
-      </ion-buttons>
-  
-    </ion-slide>
-
-    <ion-slide class="slide-3">
-      <h1></h1>
-      <ion-buttons slot="start">
-
-        <ion-back-button defaultHref="/" text="Volver" color="primary" mode="ios">
-  
-        </ion-back-button>
-  
-  
-      </ion-buttons>
-  
-    </ion-slide>
-  </ion-slides>
-
-
-
-
-
-</ion-content>
+      <div class="slide-img-padding">
+         <img [src]="slide.img">
+      </div>
+      <div>
+       <h3 [innerHTML]="slide.titulo"></h3>
+      </div>
+     </ion-slide>
+ 
+   </ion-slides>
+ </ion-content>
+ 
